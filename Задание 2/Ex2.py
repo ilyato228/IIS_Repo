@@ -12,7 +12,7 @@ def get_teachers(df_grades):
 
 
 def __main__():
-    grades, students = read_database('./grades.csv', './students.csv')
+    grades, students = read_database('grades.csv', 'students.csv')
     print('Список преподавателей:\n')
     for i in get_teachers(grades):
         print(i)
